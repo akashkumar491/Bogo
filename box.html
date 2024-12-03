@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dynamic Box</title>
+    <link rel="stylesheet" href="./box.css" />
+  </head>
+  <body style="background-color: #070606">
+    <main class="container">
+      <div style="display: flex; align-items: center; margin-top: 20px">
+        <div
+          style="
+            flex: 1;
+            background-color: #c8c8c8;
+            height: 1px;
+            width: 96.63px;
+            margin-left: 25px;
+          "
+        ></div>
+
+        <span
+          style="
+            flex: 1;
+            margin: 0 10px;
+            font-weight: 600;
+            font-size: 20px;
+            color: #ff6b82;
+            white-space: nowrap; /* Prevent text wrapping */
+            line-height: 24.2px;
+          "
+        >
+          YAH! It's BOGO
+        </span>
+
+        <div
+          style="
+            flex: 1;
+            background-color: #c8c8c8;
+            height: 1px;
+            width: 96.63px;
+            margin-right: 25px;
+          "
+        ></div>
+      </div>
+
+      <section class="box" id="box1">
+        <div class="box-header">
+          <div class="box-header-left">
+            <input type="radio" name="box" />
+            <div>
+              <div
+                style="
+                  display: flex;
+                  gap: 10px;
+                  align-items: center;
+                  margin-bottom: 2px;
+                "
+              >
+                <span class="unit">Unit 1</span>
+                <span class="discount">10% off</span>
+              </div>
+              <span style="font-size: 12px; font-weight: 400"
+                >Standard Price</span
+              >
+            </div>
+          </div>
+          <div>
+            <span class="price">$10.00 USD</span>
+            <span class="price"></span>
+          </div>
+        </div>
+        <div class="options">
+          <div class="dropdown">
+            <label for="size1" class="size">Size</label>
+            <select id="size1">
+              <option value="small" style>S</option>
+              <option value="medium">M</option>
+              <option value="large">L</option>
+            </select>
+          </div>
+          <div class="dropdown">
+            <label for="color1" class="size">Color</label>
+            <select id="color1">
+              <option value="red">Red</option>
+              <option value="blue">Blue</option>
+              <option value="green">Green</option>
+            </select>
+          </div>
+        </div>
+      </section>
+      <section class="box" id="box2" style="position: relative;">
+        <div class="tag">MOST POPULAR</div>
+        <div class="box-header">
+          <div class="box-header-left">
+            <input type="radio" name="box" />
+            <div
+              style="
+                display: flex;
+                gap: 10px;
+                align-items: center;
+                margin-bottom: 2px;
+              "
+            >
+              <span class="unit">Unit 2</span>
+              <span class="discount">20% off</span>
+            </div>
+          </div>
+          <span class="price">$15.00 USD</span>
+        </div>
+        <div class="options">
+          <div class="dropdown">
+            <label for="size2" class="size">Size</label>
+            <select id="size2">
+              <option value="small">S</option>
+              <option value="medium">M</option>
+              <option value="large">L</option>
+            </select>
+          </div>
+          <div class="dropdown">
+            <label for="color2" class="size">Color</label>
+            <select id="color2">
+              <option value="red">Red</option>
+              <option value="blue">Blue</option>
+              <option value="green">Green</option>
+            </select>
+          </div>
+        </div>
+      </section>
+      <section class="box" id="box3">
+        <div class="box-header">
+          <div class="box-header-left">
+            <input type="radio" name="box" />
+            <div
+              style="
+                display: flex;
+                gap: 10px;
+                align-items: center;
+                margin-bottom: 2px;
+              "
+            >
+              <span class="unit">Unit 3</span>
+              <span class="discount">30% off</span>
+            </div>
+          </div>
+          <span class="price">$20.00 USD</span>
+        </div>
+        <div class="options">
+          <div class="dropdown">
+            <label for="size3" class="size">Size</label>
+            <select
+              id="size3"
+            >
+              <option value="small">S</option>
+              <option value="medium">M</option>
+              <option value="large">L</option>
+            </select>
+          </div>
+          <div class="dropdown">
+            <label for="color3" class="size">Color</label>
+            <select id="color3">
+              <option value="red">Red</option>
+              <option value="blue">Blue</option>
+              <option value="green">Green</option>
+            </select>
+          </div>
+        </div>
+      </section>
+      <div
+        style="
+          display: flex;
+          align-items: center;
+          justify-content: space-around;
+          gap: 160px;
+        "
+      >
+        <p style="font-size: 14px; font-weight: 400; color: #ff6b82">
+          Free Delivery
+        </p>
+        <p style="font-size: 14px; font-weight: 500">Total: $18.00 USD</p>
+      </div>
+      <div style="text-align: center; margin-top: 20px">
+        <button
+          style="
+            background-color: #ff6b82;
+            color: #ffffff;
+            padding: 10px 20px;
+            height: 40px;
+            width: 420px;
+            font-size: 12px;
+            font-weight: 500;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+          "
+        >
+          + Add to Cart
+        </button>
+        <p
+          style="
+            text-align: end;
+            margin-right: 24px;
+            margin-top: 5px;
+            color: grey;
+            font-weight: 400;
+            font-size: 12px;
+            font-style: italic;
+          "
+        >
+          @Powered by Pumper
+        </p>
+      </div>
+    </main>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const boxes = document.querySelectorAll(".box");
+
+        boxes.forEach((box) => {
+          box.addEventListener("click", () => {
+            // Close all other boxes
+            boxes.forEach((b) => b !== box && b.classList.remove("expanded"));
+
+            // Toggle the clicked box
+            box.classList.toggle("expanded");
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
